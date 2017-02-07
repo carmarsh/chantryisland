@@ -61,7 +61,7 @@ $desktop: "(min-width: 992px)";
 // **** **** HEADER STYLING **** ***** //
 
 #home_header {
-    background-image: url('../images/home/lake_small.png');
+    background-image: url('../img/home/lake_small.png');
 }
 
 .main_header {
@@ -166,14 +166,15 @@ $desktop: "(min-width: 992px)";
 }
 
 @media #{$desktop} {
-  #main_header {
-        background-image: url('../images/home/lake_large.png');
+  #home_header {
+        background-image: url('../img/home/lake_large.png');
+        height: 950px;
   }
   .main_header {
     background-size: 100%;
     background-repeat: no-repeat;
     // border: 2px solid red;
-    height: 950px;
+    // height: 950px;
     // border: 2px solid limegreen;
     #main_nav {
       position: static;
@@ -297,7 +298,7 @@ $desktop: "(min-width: 992px)";
   }
 }
 
-// **** ****SECTION 2 STYLING [VIDEO]] **** ***** //
+// **** **** home page [VIDEO]] **** //
 
 @media #{$desktop} {
   #video_con {
@@ -319,7 +320,7 @@ $desktop: "(min-width: 992px)";
   }
 }
 
-// **** *** FOOTER styling **** ***** //
+// **** FOOTER styling ****//
 
 #main_footer {
   // border: 2px solid cornflowerblue;
@@ -348,8 +349,11 @@ $desktop: "(min-width: 992px)";
 }
 
 @media #{$desktop}{
-  #main_footer{
+  .home_footer{
     margin-top: 45%;
+  }
+  #main_footer{
+    margin-top: 50px;
     padding: 50px 15px;
     background-color: $blue;
     // border: 2px dashed white;
@@ -490,6 +494,7 @@ $desktop: "(min-width: 992px)";
   #about_content {
     padding-left: 100px;
     padding-right: 100px;
+    margin-top: 50px;
   }
 
   #about_the_island {
