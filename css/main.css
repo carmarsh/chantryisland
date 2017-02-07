@@ -9,14 +9,17 @@
   font-weight: normal;
   font-style: normal; }
 .nopadding {
-  margin: 0px !important;
-  padding: 0px !important; }
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 0;
+  padding-right: 0; }
 
 .wave_border {
   position: absolute;
   width: 100%;
   left: 0;
   margin-top: -19px;
+  border: 1px solid black;
   z-index: 1; }
 
 #site_con {
@@ -25,6 +28,9 @@
 
 #home_header, #tours_header {
   background-image: url("../img/home/lake_small.png"); }
+
+#tours_header {
+  padding-bottom: 30px; }
 
 .main_header {
   background-size: 100%;
@@ -99,9 +105,9 @@
     font-family: "Josefin Slab"; }
 
 @media (min-width: 992px) {
-  #home_header {
+  #home_header, #tours_header {
     background-image: url("../img/home/lake_large.png");
-    height: 950px; }
+    height: 1100px; }
 
   .main_header {
     background-size: 100%;
@@ -218,7 +224,7 @@
 
 @media (min-width: 992px) {
   #home_section_1 {
-    margin-top: -20%; }
+    margin-top: -40%; }
     #home_section_1 #who_we_are_con {
       display: block;
       margin: 0 auto;
@@ -282,7 +288,7 @@
     font-size: .75em;
     text-align: justify; }
 
-@media (min-width: 768px) {
+@media (min-width: 578px) {
   #about_the_island #about_para2 {
     padding-bottom: 100px; } }
 @media (min-width: 992px) {
@@ -507,5 +513,151 @@
       font-size: .875em; }
     #about_partners .wave_border {
       margin-top: -80px; } }
+#tours_booking #booking_container {
+  font-family: "Josefin Slab";
+  padding: 0;
+  text-align: center; }
+  #tours_booking #booking_container #booking_container_1 {
+    background-color: #c72026;
+    padding: 10px;
+    color: #FFFFFF; }
+    #tours_booking #booking_container #booking_container_1 h3 {
+      font-family: "Adam CG Pro";
+      font-size: 1em;
+      padding: 30px; }
+    #tours_booking #booking_container #booking_container_1 #booking_desc_1 {
+      text-align: justify;
+      font-size: .875em; }
+    #tours_booking #booking_container #booking_container_1 #telephone {
+      font-size: 1.8em; }
+    #tours_booking #booking_container #booking_container_1 img {
+      height: 60px;
+      padding-bottom: 20px; }
+    #tours_booking #booking_container #booking_container_1 #schedule {
+      font-size: 1.25em; }
+  #tours_booking #booking_container #booking_container_2 {
+    color: #11132e;
+    text-align: justify;
+    font-size: .875em;
+    padding: 30px; }
+
+@media (min-width: 992px) {
+  #tours_booking {
+    margin-top: -40%; }
+    #tours_booking #booking_container #booking_container_1 h3 {
+      font-size: 1.5em; }
+    #tours_booking #booking_container #booking_container_1 #schedule {
+      font-size: 1.5em; }
+    #tours_booking #booking_container #booking_container_2 {
+      background-color: #c72026;
+      padding-bottom: 15%; }
+      #tours_booking #booking_container #booking_container_2 p {
+        color: #FFFFFF; }
+
+  #booking_image_con {
+    margin-top: -7%; }
+    #booking_image_con img {
+      width: 200%; } }
+#tours_details #details_container {
+  background-color: #d2d5d3;
+  color: #11132e;
+  font-size: 0.875em;
+  text-align: justify;
+  font-family: "Josefin Slab";
+  font-size: .875em;
+  padding-bottom: 50px; }
+  #tours_details #details_container h3 {
+    font-family: "Adam CG Pro";
+    font-size: 1.2em;
+    text-align: center;
+    padding: 30px;
+    margin: 0; }
+  #tours_details #details_container img {
+    height: 50px;
+    margin: 20px; }
+  #tours_details #details_container .italics {
+    font-style: italic; }
+#tours_details .wave_border {
+  margin-top: -6%; }
+
+@media (min-width: 992px) {
+  #tours_details {
+    margin-top: 50px; }
+    #tours_details #details_image_con {
+      background-color: #11132e;
+      padding-top: 75px;
+      padding-bottom: 75px; }
+      #tours_details #details_image_con img {
+        width: 200%; }
+    #tours_details #details_container {
+      padding-bottom: 150px; }
+      #tours_details #details_container h3 {
+        font-size: 2em; }
+      #tours_details #details_container img {
+        height: 80px; }
+      #tours_details #details_container p {
+        margin-top: 20px; } }
+#tours_arrival #arrival_container {
+  background-color: #d2d5d3;
+  color: #11132e;
+  font-size: 0.875em;
+  text-align: justify;
+  font-family: "Josefin Slab";
+  font-size: .875em;
+  padding-bottom: 20px;
+  padding-top: 30px;
+  margin-top: 40px; }
+  #tours_arrival #arrival_container h3 {
+    font-family: "Adam CG Pro";
+    font-size: 1.2em;
+    text-align: center;
+    padding: 25px;
+    margin: 0; }
+#tours_arrival .wave_border {
+  margin-top: 20px; }
+
+@media (min-width: 992px) {
+  #tours_arrival #arrival_container h3 {
+    padding-top: 75px; }
+  #tours_arrival .wave_border {
+    margin-top: 10px; } }
+#tours_dates #dates_title_container {
+  background-color: #11132e; }
+  #tours_dates #dates_title_container h3 {
+    font-family: "Adam CG Pro";
+    text-align: center;
+    font-size: 1em;
+    color: #FFFFFF;
+    padding: 25px 0px 50px 0px; }
+#tours_dates #dates_container {
+  height: 300px;
+  background-color: #f0f0f0;
+  margin-top: -30px; }
+  #tours_dates #dates_container p {
+    font-family: "Josefin Slab";
+    font-size: .875em;
+    font-style: italic;
+    padding-top: 50px; }
+
+#tours_book_button {
+  background-color: #c72026;
+  font-family: "Adam CG Pro";
+  color: #FFFFFF;
+  border: none;
+  padding: 10px 20px;
+  margin: 30px; }
+
+@media (min-width: 578px) {
+  #tours_dates {
+    margin-top: 30px; } }
+@media (min-width: 992px) {
+  #tours_dates {
+    margin-top: 75px; }
+    #tours_dates #dates_title_container h3 {
+      padding: 50px 0px 100px 0px;
+      font-size: 2em; }
+    #tours_dates #dates_container {
+      height: 500px;
+      margin-top: -75px; } }
 
 /*# sourceMappingURL=main.css.map */
