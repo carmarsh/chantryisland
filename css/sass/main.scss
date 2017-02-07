@@ -56,12 +56,14 @@ $desktop: "(min-width: 992px)";
 }
 
 
-// **** ****          HEADER STYLING            **** ***** //
 
-#home_header {
+// **** **** HEADER STYLING **** ***** //
+//home header, tours header
+#home_header, #tours_header {
     background-image: url('../img/home/lake_small.png');
 }
 
+//every header
 .main_header {
   background-size: 100%;
   background-repeat: no-repeat;
@@ -283,9 +285,8 @@ $desktop: "(min-width: 992px)";
   .home_footer{
     margin-top: 45%;
   }
-
-  .about_footer {
-    margin-top:50px;
+  .about_footer{
+    margin-top: 50px;
   }
   #main_footer{
     padding: 50px 15px;
@@ -352,9 +353,7 @@ $desktop: "(min-width: 992px)";
 }
 
 
-
-//--------------------  HOME STYLING --------------------------------//
-
+//-------------------  HOME STYLING --------------------------------//
 
 // **** ****SECTION 1 STYLING [WHO WE ARE] **** ***** //
 #home_section_1 {

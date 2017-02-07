@@ -23,7 +23,7 @@
   overflow: hidden;
   width: 100%; }
 
-#home_header {
+#home_header, #tours_header {
   background-image: url("../img/home/lake_small.png"); }
 
 .main_header {
