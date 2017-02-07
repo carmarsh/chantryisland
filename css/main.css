@@ -149,6 +149,55 @@
     .main_header .wave_border {
       margin-top: 23%;
       z-index: 0; } }
+#main_footer {
+  text-align: center; }
+  #main_footer #footer_media_icon_con {
+    padding: 0;
+    margin: 0; }
+    #main_footer #footer_media_icon_con ul {
+      padding: 20px;
+      margin: 0; }
+      #main_footer #footer_media_icon_con ul li {
+        list-style: none;
+        display: inline-block; }
+        #main_footer #footer_media_icon_con ul li a img {
+          height: 25px;
+          margin: 3px; }
+
+@media (min-width: 992px) {
+  .home_footer {
+    margin-top: 45%; }
+
+  .about_footer {
+    margin-top: 50px; }
+
+  #main_footer {
+    padding: 50px 15px;
+    background-color: #11132e; }
+    #main_footer #footer_logo_con img {
+      height: 60px;
+      padding: 0; }
+    #main_footer #footer_nav ul li a {
+      color: #FFFFFF;
+      font-size: .7em;
+      font-family: "Adam CG Pro"; }
+    #main_footer #footer_nav ul li p {
+      color: #FFFFFF;
+      font-size: .9em;
+      padding: 0;
+      margin: 0; }
+    #main_footer #footer_media_icon_con {
+      margin-top: 0; }
+      #main_footer #footer_media_icon_con ul li a img {
+        height: 25px; }
+    #main_footer #footer_login_button button {
+      background-color: #FFFFFF;
+      border: none;
+      padding: 5px 10px; }
+      #main_footer #footer_login_button button a {
+        color: #11132e;
+        font-family: "Adam CG Pro";
+        font-size: .75em; } }
 #home_section_1 #who_we_are_con {
   background-color: #c72026;
   padding: 25px 50px;
@@ -190,53 +239,6 @@
       font-family: "Josefin Slab";
       padding-left: 20%;
       margin-top: 20px; } }
-#main_footer {
-  text-align: center; }
-  #main_footer #footer_media_icon_con {
-    padding: 0;
-    margin: 0; }
-    #main_footer #footer_media_icon_con ul {
-      padding: 20px;
-      margin: 0; }
-      #main_footer #footer_media_icon_con ul li {
-        list-style: none;
-        display: inline-block; }
-        #main_footer #footer_media_icon_con ul li a img {
-          height: 25px;
-          margin: 3px; }
-
-@media (min-width: 992px) {
-  .home_footer {
-    margin-top: 45%; }
-
-  #main_footer {
-    margin-top: 50px;
-    padding: 50px 15px;
-    background-color: #11132e; }
-    #main_footer #footer_logo_con img {
-      height: 60px;
-      padding: 0; }
-    #main_footer #footer_nav ul li a {
-      color: #FFFFFF;
-      font-size: .7em;
-      font-family: "Adam CG Pro"; }
-    #main_footer #footer_nav ul li p {
-      color: #FFFFFF;
-      font-size: .9em;
-      padding: 0;
-      margin: 0; }
-    #main_footer #footer_media_icon_con {
-      margin-top: 0; }
-      #main_footer #footer_media_icon_con ul li a img {
-        height: 25px; }
-    #main_footer #footer_login_button button {
-      background-color: #FFFFFF;
-      border: none;
-      padding: 5px 10px; }
-      #main_footer #footer_login_button button a {
-        color: #11132e;
-        font-family: "Adam CG Pro";
-        font-size: .75em; } }
 #about_header {
   overflow: hidden; }
   #about_header #about_book_button {

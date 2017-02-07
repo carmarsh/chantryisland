@@ -252,6 +252,108 @@ $desktop: "(min-width: 992px)";
 
 }
 
+// **** FOOTER styling ****//
+
+#main_footer {
+  // border: 2px solid cornflowerblue;
+  text-align: center;
+  #footer_media_icon_con {
+    // border: 1px solid green;
+    padding: 0;
+    margin: 0;
+    ul {
+        // border: 1px solid green;
+        padding: 20px;
+        margin: 0;
+    li {
+      list-style: none;
+        // border: 1px solid pink;
+        display: inline-block;
+      a  {
+        img {
+          height: 25px;
+          margin: 3px;
+        }
+      }
+    }
+  }
+  }
+}
+
+@media #{$desktop}{
+  .home_footer{
+    margin-top: 45%;
+  }
+  .about_footer{
+    margin-top: 50px;
+  }
+  #main_footer{
+    padding: 50px 15px;
+    background-color: $blue;
+    // border: 2px dashed white;
+    #footer_logo_con {
+      // border: 2px solid limegreen;
+      img {
+          // border: 2px solid yellow;
+          height: 60px;
+          padding: 0;
+
+      }
+    }
+    #footer_nav {
+      // border: 2px solid blue;
+      ul {
+
+        li {
+
+        a {
+        color: $white;
+        font-size: .7em;
+        font-family: $heading;
+        }
+        p {
+          color: $white;
+          font-size: .9em;
+          padding:0;
+          margin:0;
+        }
+      }
+    }
+    }
+    #footer_media_icon_con {
+      // border: 2px solid purple;
+      margin-top: 0;
+      ul {
+        li {
+          a {
+            // border: 1px solid $white;
+            img {
+              height: 25px;
+            }
+          }
+        }
+      }
+    }
+    #footer_login_button {
+      // border: 2px solid red;
+      button {
+        background-color: $white;
+        border: none;
+        padding: 5px 10px;
+        a{
+          color: $blue;
+          font-family: $heading;
+          font-size: .75em;
+        }
+      }
+
+    }
+  }
+}
+
+
+//----  ------------ HOME PAGE ------------  -----   ------//
+
 
 // **** ****SECTION 1 STYLING [WHO WE ARE] **** ***** //
 #home_section_1 {
@@ -319,102 +421,6 @@ $desktop: "(min-width: 992px)";
   }
 }
 
-// **** FOOTER styling ****//
-
-#main_footer {
-  // border: 2px solid cornflowerblue;
-  text-align: center;
-  #footer_media_icon_con {
-    // border: 1px solid green;
-    padding: 0;
-    margin: 0;
-    ul {
-        // border: 1px solid green;
-        padding: 20px;
-        margin: 0;
-    li {
-      list-style: none;
-        // border: 1px solid pink;
-        display: inline-block;
-      a  {
-        img {
-          height: 25px;
-          margin: 3px;
-        }
-      }
-    }
-  }
-  }
-}
-
-@media #{$desktop}{
-  .home_footer{
-    margin-top: 45%;
-  }
-  #main_footer{
-    margin-top: 50px;
-    padding: 50px 15px;
-    background-color: $blue;
-    // border: 2px dashed white;
-    #footer_logo_con {
-      // border: 2px solid limegreen;
-      img {
-          // border: 2px solid yellow;
-          height: 60px;
-          padding: 0;
-
-      }
-    }
-    #footer_nav {
-      // border: 2px solid blue;
-      ul {
-
-        li {
-
-        a {
-        color: $white;
-        font-size: .7em;
-        font-family: $heading;
-        }
-        p {
-          color: $white;
-          font-size: .9em;
-          padding:0;
-          margin:0;
-        }
-      }
-    }
-    }
-    #footer_media_icon_con {
-      // border: 2px solid purple;
-      margin-top: 0;
-      ul {
-        li {
-          a {
-            // border: 1px solid $white;
-            img {
-              height: 25px;
-            }
-          }
-        }
-      }
-    }
-    #footer_login_button {
-      // border: 2px solid red;
-      button {
-        background-color: $white;
-        border: none;
-        padding: 5px 10px;
-        a{
-          color: $blue;
-          font-family: $heading;
-          font-size: .75em;
-        }
-      }
-
-    }
-  }
-}
 
 //--------------------  ABOUT STYLING --------------------------------//
 
