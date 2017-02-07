@@ -24,7 +24,7 @@
   width: 100%; }
 
 #home_header {
-  background-image: url("../images/home/lake_small.png"); }
+  background-image: url("../img/home/lake_small.png"); }
 
 .main_header {
   background-size: 100%;
@@ -99,13 +99,13 @@
     font-family: "Josefin Slab"; }
 
 @media (min-width: 992px) {
-  #main_header {
-    background-image: url("../images/home/lake_large.png"); }
+  #home_header {
+    background-image: url("../img/home/lake_large.png");
+    height: 950px; }
 
   .main_header {
     background-size: 100%;
-    background-repeat: no-repeat;
-    height: 950px; }
+    background-repeat: no-repeat; }
     .main_header #main_nav {
       position: static;
       background: transparent; }
@@ -206,8 +206,11 @@
           margin: 3px; }
 
 @media (min-width: 992px) {
+  .home_footer {
+    margin-top: 45%; }
+
   #main_footer {
-    margin-top: 45%;
+    margin-top: 50px;
     padding: 50px 15px;
     background-color: #11132e; }
     #main_footer #footer_logo_con img {
@@ -283,7 +286,8 @@
 @media (min-width: 992px) {
   #about_content {
     padding-left: 100px;
-    padding-right: 100px; }
+    padding-right: 100px;
+    margin-top: 50px; }
 
   #about_the_island {
     overflow: visible;
