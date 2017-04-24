@@ -8,6 +8,21 @@
   src: url("../fonts/josefinslab/josefinslab-regular-webfont.woff2") format("woff2"), url("../fonts/josefinslab/josefinslab-regular-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
+@font-face {
+  font-family: 'Josefin Slab Bold';
+  src: url("../fonts/josefinslab/josefinslab-bold-webfont.woff2") format("woff2"), url("../fonts/josefinslab/josefinslab-bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'Josefin Slab Italic';
+  src: url("../fonts/josefinslab/josefinslab-italic-webfont.woff2") format("woff2"), url("../fonts/josefinslab/josefinslab-italic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'Josefin Slab Semibold';
+  src: url("../fonts/josefinslab/josefinslab-semibold-webfont.woff2") format("woff2"), url("../fonts/josefinslab/josefinslab-semibold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
 .nopadding {
   margin-left: 0;
   margin-right: 0;
@@ -19,13 +34,22 @@
   width: 100%;
   left: 0;
   margin-top: -19px;
-  border: 1px solid black;
   z-index: 1; }
 
-#site_con {
-  overflow: hidden;
-  width: 100%; }
+p {
+  letter-spacing: 1px; }
 
+.transparent {
+  opacity: 0.65; }
+
+@media (min-width: 992px) {
+  p {
+    font-size: 1.7em; }
+
+  .shadow {
+    -webkit-box-shadow: 0px 2px 26px -6px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 0px 2px 26px -6px rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 2px 26px -6px rgba(0, 0, 0, 0.4); } }
 #home_header, #tours_header {
   background-image: url("../img/home/lake_small.png"); }
 
@@ -55,8 +79,9 @@
     .main_header #main_nav #nav_content {
       position: absolute;
       z-index: 1;
-      background: rgba(255, 255, 255, 0.8);
+      background: rgba(255, 255, 255, 0.92);
       height: 100vh;
+      width: 100%;
       top: 0;
       left: 0;
       right: 0;
@@ -101,8 +126,12 @@
     width: 125px; }
   .main_header #home_book_button {
     background-color: #FFFFFF;
-    margin: 20px;
-    font-family: "Josefin Slab"; }
+    margin: 40px;
+    font-family: 'Josefin Slab Bold';
+    width: 180px;
+    padding: 20px;
+    font-size: 1em;
+    letter-spacing: 1.5px; }
 
 @media (min-width: 992px) {
   #home_header, #tours_header {
@@ -127,17 +156,21 @@
           .main_header #main_nav #nav_content ul li a {
             font-size: .875em; }
     .main_header #header_top_con #current_page_con {
-      text-align: center; }
+      text-align: center;
+      padding-left: 93px; }
       .main_header #header_top_con #current_page_con a {
         font-family: "Adam CG Pro";
         color: #11132e;
-        font-size: .875em; }
+        font-size: .875em;
+        color: rgba(17, 19, 46, 0.65);
+        letter-spacing: 1.5px; }
       .main_header #header_top_con #current_page_con .current_page_underline {
         margin-top: 0px;
-        margin-bottom: 0px;
-        width: 25px; }
+        margin-bottom: -5px;
+        width: 35px; }
     .main_header #header_top_con #media_icon_con {
-      text-align: center; }
+      text-align: center;
+      opacity: 0.65; }
       .main_header #header_top_con #media_icon_con ul {
         text-align: center;
         margin: 0;
@@ -145,7 +178,8 @@
         .main_header #header_top_con #media_icon_con ul li {
           display: inline; }
           .main_header #header_top_con #media_icon_con ul li a img {
-            width: 20px; }
+            width: 27px;
+            padding-left: 10px; }
     .main_header #home_title_box {
       padding: 40px;
       margin-bottom: 20px; }
@@ -155,8 +189,12 @@
     .main_header .wave_border {
       margin-top: 23%;
       z-index: 0; } }
+.footer {
+  margin-top: 5%; }
+
 #main_footer {
-  text-align: center; }
+  text-align: center;
+  background-color: #11132e; }
   #main_footer #footer_media_icon_con {
     padding: 0;
     margin: 0; }
@@ -168,7 +206,10 @@
         display: inline-block; }
         #main_footer #footer_media_icon_con ul li a img {
           height: 25px;
-          margin: 3px; }
+          margin: 3px;
+          padding-left: 20px; }
+    #main_footer #footer_media_icon_con #first_icon_footer {
+      padding-left: 0px; }
 
 @media (min-width: 992px) {
   .home_footer {
@@ -196,17 +237,20 @@
       margin-top: 0; }
       #main_footer #footer_media_icon_con ul li a img {
         height: 25px; }
-    #main_footer #footer_login_button button {
-      background-color: #FFFFFF;
-      border: none;
-      padding: 5px 10px; }
-      #main_footer #footer_login_button button a {
-        color: #11132e;
-        font-family: "Adam CG Pro";
-        font-size: .75em; } }
+    #main_footer #footer_login_button {
+      position: absolute;
+      right: 3%; }
+      #main_footer #footer_login_button button {
+        background-color: #FFFFFF;
+        border: none;
+        padding: 5px 10px; }
+        #main_footer #footer_login_button button a {
+          color: #11132e;
+          font-family: "Adam CG Pro";
+          font-size: .75em; } }
 #home_section_1 #who_we_are_con {
   background-color: #c72026;
-  padding: 25px 50px;
+  padding: 50px 50px;
   color: #FFFFFF; }
   #home_section_1 #who_we_are_con h3 {
     font-family: "Adam CG Pro";
@@ -215,7 +259,7 @@
   #home_section_1 #who_we_are_con img {
     width: 120px;
     display: block;
-    margin: 20px auto; }
+    margin: 40px auto; }
   #home_section_1 #who_we_are_con p {
     font-family: "Josefin Slab";
     font-size: .8em;
@@ -224,7 +268,7 @@
 
 @media (min-width: 992px) {
   #home_section_1 {
-    margin-top: -40%; }
+    margin-top: -35%; }
     #home_section_1 #who_we_are_con {
       display: block;
       margin: 0 auto;
@@ -232,11 +276,14 @@
       padding: 70px 100px 70px 100px; }
       #home_section_1 #who_we_are_con p {
         font-size: .875em; } }
+@media (min-width: 1200px) {
+  #home_section_1 {
+    margin-top: -30%; } }
 @media (min-width: 992px) {
   #video_con {
     width: 100%;
     position: absolute;
-    margin-top: -5%; }
+    margin-top: -3%; }
     #video_con img {
       width: 60%;
       margin: 0 auto;
@@ -245,12 +292,10 @@
       font-family: "Josefin Slab";
       padding-left: 20%;
       margin-top: 20px; } }
-#about_header {
-  overflow: hidden; }
-  #about_header #about_book_button {
-    background-color: #11132e;
-    color: #FFFFFF;
-    font-family: "Adam CG Pro"; }
+#about_header #about_book_button {
+  background-color: #11132e;
+  color: #FFFFFF;
+  font-family: "Adam CG Pro"; }
 
 @media (min-width: 992px) {
   #about_header #about_book_button {
@@ -303,17 +348,18 @@
     padding-bottom: 30px; }
     #about_the_island #about_boat_icon {
       height: 13%;
-      right: 150px;
+      right: 230px;
       margin-top: -4%; }
     #about_the_island h2 {
-      font-size: 2.5em; }
+      font-size: 2em;
+      margin-top: 5%; }
     #about_the_island #about_waves_icon {
       margin-left: -170px;
       height: 7%;
       margin-top: 30px; }
     #about_the_island #about_para1 {
       padding: 50px 200px;
-      font-size: 1.1em; }
+      font-size: 1em; }
     #about_the_island #about_image_1 {
       padding-left: 100px;
       padding-right: 100px; }
@@ -322,7 +368,7 @@
       margin-right: 125px;
       margin-top: 100px;
       padding: 75px 100px 100px 100px;
-      font-size: .875em; }
+      font-size: 1em; }
     #about_the_island .wave_border {
       margin-top: -30px;
       left: 0; } }
@@ -363,12 +409,12 @@
     height: 150px; } }
 @media (min-width: 992px) {
   #about_history {
-    margin: 0px -50px 100px -50px; }
+    margin: 0px 80px 100px 80px; }
     #about_history h2 {
       font-size: 2em;
       padding: 30px; }
     #about_history p {
-      font-size: .875em;
+      font-size: 1em;
       padding: 25px 125px 20px 125px; }
     #about_history img {
       height: 120px;
@@ -412,14 +458,14 @@
       padding-top: 125px; }
     #about_bird p {
       padding: 25px 100px 125px 100px;
-      font-size: .875em; }
+      font-size: 1em; }
     #about_bird #about_birds_icon {
       right: -6%;
       margin-top: -35%;
       height: 9%; }
     #about_bird #about_bird_egg_img {
-      padding-left: 150px;
-      padding-right: 150px;
+      padding-left: 200px;
+      padding-right: 200px;
       margin-top: -100px; }
     #about_bird button {
       background-color: #11132e;
@@ -453,15 +499,16 @@
       text-align: center;
       font-family: "Adam CG Pro";
       color: #11132e;
-      font-size: .9em;
-      border: 1px solid #11132e;
+      font-size: 1em;
+      border: 2px solid #11132e;
       position: absolute;
       margin-top: 15px;
-      margin-left: 30px;
-      margin-right: 30px;
+      margin-left: 60px;
+      margin-right: 60px;
       left: 0;
       right: 0;
-      z-index: 2; }
+      z-index: 2;
+      padding: 10px; }
 
 #about_spacer {
   height: 20px; }
@@ -470,17 +517,16 @@
   #about_restoration {
     overflow: visible; }
     #about_restoration #restoration_desc_con {
-      padding: 50px; }
+      padding: 50px;
+      margin-right: 80px;
+      margin-left: 80px; }
       #about_restoration #restoration_desc_con h2 {
         font-size: 2em; }
       #about_restoration #restoration_desc_con #restoration_desc {
-        font-size: 1em;
-        padding: 25px 50px; }
+        font-size: 1em; }
       #about_restoration #restoration_desc_con #about_hammer_icon {
         height: 125px; }
     #about_restoration #restoration_img_con {
-      margin-left: -75px;
-      margin-right: -75px;
       margin-top: -125px;
       padding: 200px 100px 50px 100px; }
       #about_restoration #restoration_img_con img {
@@ -503,14 +549,15 @@
     padding: 10px 20px;
     border: none;
     font-family: "Adam CG Pro";
-    color: #11132e; }
+    color: #11132e;
+    margin-bottom: 30px; }
 
 @media (min-width: 992px) {
   #about_partners {
     margin-top: 70px;
     padding: 50px 50px 25px 50px; }
     #about_partners p {
-      font-size: .875em; }
+      font-size: 1em; }
     #about_partners .wave_border {
       margin-top: -80px; } }
 #tours_booking #booking_container {
@@ -543,7 +590,7 @@
 
 @media (min-width: 992px) {
   #tours_booking {
-    margin-top: -40%; }
+    margin-top: -35%; }
     #tours_booking #booking_container #booking_container_1 h3 {
       font-size: 1.5em; }
     #tours_booking #booking_container #booking_container_1 #schedule {
@@ -558,6 +605,9 @@
     margin-top: -7%; }
     #booking_image_con img {
       width: 200%; } }
+@media (min-width: 1200px) {
+  #tours_booking {
+    margin-top: -30%; } }
 #tours_details #details_container {
   background-color: #d2d5d3;
   color: #11132e;

@@ -1,0 +1,619 @@
+//FONTS
+@font-face {
+    font-family: 'Adam CG Pro';
+    src: url('../fonts/adam/adam.cg_pro-webfont.woff2') format('woff2'),
+         url('../fonts/adam/adam.cg_pro-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Josefin Slab';
+    src: url('../fonts/josefinslab/josefinslab-regular-webfont.woff2') format('woff2'),
+         url('../fonts/josefinslab/josefinslab-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Josefin Slab Bold';
+    src: url('../fonts/josefinslab/josefinslab-bold-webfont.woff2') format('woff2'),
+         url('../fonts/josefinslab/josefinslab-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Josefin Slab Italic';
+    src: url('../fonts/josefinslab/josefinslab-italic-webfont.woff2') format('woff2'),
+         url('../fonts/josefinslab/josefinslab-italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Josefin Slab Semibold';
+    src: url('../fonts/josefinslab/josefinslab-semibold-webfont.woff2') format('woff2'),
+         url('../fonts/josefinslab/josefinslab-semibold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+//Font Variables
+$heading: 'Adam CG Pro';
+$body: 'Josefin Slab';
+$bodybold: 'Josefin Slab Bold';
+$bodyitalic: 'Josefin Slab Italic';
+$bodysemibold: 'Josefin Slab Semibold';
+
+//Colour variables
+$blue: #11132e;
+$red: #c72026;
+$grey: #d2d5d3;
+$white: #FFFFFF;
+
+//media query variables
+$tablet: "(min-width: 768px)";
+
+$desktop: "(min-width: 992px)";
+
+$desktop_large: "(min-width: 1200px)";
+
+//resets
+.nogutter {
+  margin-left: 0 !important;
+    margin-right: 0 !important;
+      padding-left: 0 !important;
+        padding-right: 0 !important;
+}
+
+.wave_border {
+  position: absolute;
+  width: 100%;
+  left:0;
+  margin-top: -19px;
+  // border: 1px solid black;
+  z-index: 1;
+}
+
+.transparent{
+  opacity: 0.65;
+}
+
+//Site Styles
+//mobile
+
+h2 {
+  font-family: $heading;
+  font-size: 1.5em;
+  text-align: center;
+  letter-spacing: 1px;
+  margin-bottom: 30px;
+}
+
+.p_normal {
+  font-family: $body;
+  font-size: 0.9em;
+  line-height: 1.25em;
+  letter-spacing: 1px;
+  text-align: justify;
+}
+
+.p_special {
+  font-family: $bodybold;
+  text-align: center;
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.grey_section {
+background-color: $grey;
+color: $blue;
+padding-top: 40px;
+}
+
+.blue_section {
+  background-color: $blue;
+  color: $white;
+  padding-top: 40px;
+}
+
+.red_section {
+  background-color: $red;
+  color: $white;
+  padding-top: 40px;
+}
+.book_button {
+  background-color: $red;
+  width: 100%;
+  height: 55px;
+  font-family: $heading;
+  font-size: 1.25em;
+  border: none;
+  -webkit-box-shadow: 0px 2px 5px 2px rgba(0,0,0,0.27);
+  -moz-box-shadow: 0px 2px 5px 2px rgba(0,0,0,0.27);
+  box-shadow: 0px 2px 5px 2px rgba(0,0,0,0.27);
+  margin-bottom: 30px;
+  a {
+    color: $grey;
+  }
+}
+
+
+//desktop
+@media #{$desktop} {
+  h2 {
+    font-size: 2.5em;
+    margin-bottom: 50px;
+  }
+
+  .p_normal {
+    font-size: 1em;
+  }
+
+  .p_special {
+    font-size: 1.5em;
+  }
+
+  .grey_section {
+    padding-top: 60px;
+  }
+
+  .book_button {
+    background-color: $red;
+    width: 100%;
+    height: 55px;
+    font-family: $heading;
+    font-size: 1.25em;
+    border: none;
+    -webkit-box-shadow: 0px 2px 5px 2px rgba(0,0,0,0.27);
+    -moz-box-shadow: 0px 2px 5px 2px rgba(0,0,0,0.27);
+    box-shadow: 0px 2px 5px 2px rgba(0,0,0,0.27);
+    margin-bottom: 30px;
+    a {
+      color: $grey;
+    }
+  }
+
+}
+// ** **    ** **     ** **  DONATE PAGE STYLES ** **    ** **     ** ** //
+
+
+
+// ** **    ** **     ** **  CONTACT PAGE STYLES ** **    ** **     ** ** //
+
+#contact_contact_us {
+  .grey_section {
+    padding-bottom: 150px;
+  }
+.blue_section {
+    margin-top: -125px;
+    .contact_seemap {
+      text-align: center;
+      margin-bottom: 40px;
+      padding-top: 20px;
+    }
+  }
+}
+
+
+
+#contact_send_message {
+  margin-top: 40px;
+  .red_section {
+    padding-bottom: 40px;
+  form {
+    label {
+      display: block;
+      margin-bottom: 0;
+      font-family: $body;
+      color: $blue;
+      font-size: 1.1em;
+    }
+    input, textarea {
+      width: 100%;
+      margin-bottom: 10px;
+      background-color: none;
+      background: transparent;
+      border: 3px solid $white;
+      padding: 5px;
+    }
+    #contact_send_message_button{
+      background-color: $blue;
+      color: $white;
+      font-family: $bodybold;
+      border: none;
+      margin-top: 25px;
+      margin-bottom: 50px;
+    }
+  }
+}
+}
+
+@media #{$tablet} {
+  #contact_send_message {
+    margin-bottom: 40px;
+  }
+}
+
+@media #{$desktop} {
+  #contact_contact_us {
+  .grey_section {
+  #contact_location_icon {
+    margin-top: 50px;
+  }
+  #contact_path_icon {
+    width: 169%;
+    margin-left: -35%;
+    margin-top: -13%;
+  }
+}
+
+#contact_map {
+  margin-top: -125px;
+}
+}
+}
+
+
+
+
+// **** **** HEADER STYLING **** ***** //
+//home header, tours header
+#home_header, #tours_header {
+    background-image: url('../img/home/lake_small.png');
+}
+
+#tours_header {
+  padding-bottom: 30px;
+}
+
+//every header
+.main_header {
+  background-size: 100%;
+  background-repeat: no-repeat;
+  #main_nav {
+    // border: 2px solid green;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 0;
+    button {
+      border: none;
+      top: 0;
+      right: 0;
+      padding: 10px;
+      position: absolute;
+      z-index: 2;
+    }
+    .navbar-toggler .navbar-toggler-icon {
+      border: none;
+      width: 50px;
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(17, 19, 46)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+
+    }
+
+      #nav_content {
+        // border: 2px solid pink;
+        position: absolute;
+        z-index: 1;
+        background: rgba(255, 255, 255, 0.92);
+        height: 100vh;
+        top: 0;
+        left:0;
+        right:0;
+        padding-top: 80px;
+        ul {
+          // border: 2px solid yellow;
+          height: 100vh;
+        }
+        ul li {
+          text-align: center;
+          p {
+            color: $blue;
+            font-size: 1.3em;
+          }
+          a {
+          color: $blue;
+          font-size: 1.5em;
+          font-family: $heading;
+        }
+      }
+      }
+  }
+
+  #main_logo {
+    max-width: 50%;
+    padding-top: 25px;
+    // border: 1px solid purple;
+    padding-bottom: 0;
+  }
+
+  #red_wave_img {
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 25px;
+  // border: 1px solid red;
+  }
+
+  #home_title_box {
+    border: 1px solid $white;
+    padding:10px;
+    text-align: center;
+    h2 {
+      font-family: $body;
+        line-height: 30px;
+      margin:0;
+      color: $white;
+      font-size: 1.1em;
+      .home_title {
+        font-family: $heading;
+        font-size: 1.3em;
+      }
+    }
+  }
+
+  #home_book_button {
+    background-color: $white;
+    margin: 40px;
+    font-family: 'Josefin Slab Bold';
+    width: 180px;
+    padding: 20px;
+    font-size: 1em;
+    letter-spacing: 1.5px;
+  }
+
+}
+
+
+
+@media #{$desktop} {
+  #home_header, #tours_header {
+        background-image: url('../img/home/lake_large.png');
+        height: 1100px;
+  }
+  .main_header {
+    background-size: 100%;
+    background-repeat: no-repeat;
+    // border: 2px solid red;
+    // height: 950px;
+    // border: 2px solid limegreen;
+    #main_nav {
+      position: static;
+      // border: 2px solid orange;
+      background: transparent;
+      #nav_content {
+        // border: 2px solid hotpink;
+        background: transparent;
+        height: inherit;
+        position: static;
+        padding:0;
+        ul {
+          // border: 1px solid black;
+          margin: 0 auto;
+          height: auto;
+          padding: 50px;
+          li {
+            a{
+              font-size: .875em;
+            }
+          }
+        }
+      }
+    }
+    #header_top_con{
+      // border: 1px solid blue;
+      #current_page_con{
+        // border: 1px solid purple;
+        text-align: center;
+        padding-left: 93px;
+        a{
+          font-family: $heading;
+          color: $blue;
+          font-size: .875em;
+          color: rgba(17,19,46, 0.65);
+          letter-spacing: 1.5px;
+          // border: 1px solid green;
+        }
+        .current_page_underline {
+          // border-top: 1px solid $blue;
+          margin-top: 0px;
+          margin-bottom: -5px;
+          width: 35px;
+        }
+      }
+      #media_icon_con{
+        // border: 1px solid yellow;
+        text-align: center;
+        opacity: 0.65;
+        ul {
+          // border: 1px solid pink;
+          text-align: center;
+          margin: 0;
+          padding: 0;
+          li {
+          display: inline;
+          // border: 1px solid green;
+          a{
+            img {
+              width: 27px;
+              padding-left: 10px;
+            }
+          }
+        }
+      }
+      }
+    }
+    #home_title_box {
+      padding: 40px;
+      margin-bottom: 20px;
+      h2 {
+        font-size: 2.1em;
+        line-height: 50px;
+      }
+    }
+    .wave_border {
+      margin-top: 23%;
+      z-index: 0;
+    }
+  }
+
+}
+
+// ****         FOOTER styling           ****//
+
+
+
+#main_footer {
+  // border: 2px solid cornflowerblue;
+  text-align: center;
+  background-color:$blue;
+  #footer_media_icon_con {
+    // border: 1px solid green;
+    padding: 0;
+    margin: 0;
+    ul {
+        // border: 1px solid green;
+        padding: 20px;
+        margin: 0;
+    li {
+      list-style: none;
+        // border: 1px solid pink;
+        display: inline-block;
+      a  {
+        img {
+          height: 25px;
+          margin: 3px;
+          padding-left: 20px;
+        }
+      }
+    }
+  }
+
+  #first_icon_footer{
+   padding-left: 0px;
+  }
+
+  }
+}
+
+
+@media #{$desktop}{
+  .home_footer{
+    margin-top: 45%;
+  }
+  .about_footer{
+    margin-top: 50px;
+  }
+  #main_footer{
+    padding: 50px 15px;
+    background-color: $blue;
+    // border: 2px dashed white;
+    #footer_logo_con {
+      // border: 2px solid limegreen;
+      img {
+          // border: 2px solid yellow;
+          height: 60px;
+          padding: 0;
+
+      }
+    }
+    #footer_nav {
+      // border: 2px solid blue;
+      ul {
+
+        li {
+
+        a {
+        color: $white;
+        font-size: .7em;
+        font-family: $heading;
+        }
+        p {
+          color: $white;
+          font-size: .9em;
+          padding:0;
+          margin:0;
+        }
+      }
+    }
+    }
+    #footer_media_icon_con {
+      // border: 2px solid purple;
+      margin-top: 0;
+      ul {
+        li {
+          a {
+            // border: 1px solid $white;
+            img {
+              height: 25px;
+            }
+          }
+        }
+      }
+    }
+    #footer_login_button {
+      position:absolute;
+      right:3%;
+      // border: 2px solid red;
+      button {
+        background-color: $white;
+        border: none;
+        padding: 5px 10px;
+        a{
+          color: $blue;
+          font-family: $heading;
+          font-size: .75em;
+        }
+      }
+
+    }
+  }
+}
+ //end header & footer styling .............................//
+
+//TEMP STYLES FOR PREVIEW PAGES
+
+.page_coming_soon {
+  button {
+    color: $white;
+    font-family: $body;
+    font-size: 1em;
+  }
+  margin-bottom: 150px;
+  margin-top: 50px;
+  #closebutton {
+    color: $blue;
+    font-size: 3em;
+    text-align: right;
+    padding-right: 20px;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//end
