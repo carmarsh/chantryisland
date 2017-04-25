@@ -54,13 +54,18 @@ $white: #FFFFFF;
 
 
 //media query variables
-$tablet: "(min-width: 768px)";
+$tablet: "(min-width: 578px)";
+
 $desktop: "(min-width: 992px)";
+
+$desktop_large: "(min-width: 1200px)";
 
 //resets
 .nopadding {
-  margin: 0px !important;
-  padding: 0px !important;
+  margin-left: 0;
+    margin-right: 0;
+      padding-left: 0;
+        padding-right: 0;
 }
 
 .wave_border {
@@ -73,11 +78,12 @@ $desktop: "(min-width: 992px)";
 }
 
 
-#site_con {
-  overflow: hidden;
-  width: 100%;
-  // border: 1px solid black;
-}
+//
+// #site_con {
+//   overflow: hidden;
+//   width: 100%;
+//   // border: 1px solid black;
+// }
 
 // ********* GENERAL DESKTOP SITEWIDE STYLES ********* //
 
@@ -117,6 +123,10 @@ p{
     background-image: url('../img/home/lake_small.png');
 }
 
+#tours_header {
+  padding-bottom: 30px;
+}
+
 //every header
 .main_header {
   background-size: 100%;
@@ -149,6 +159,7 @@ p{
         z-index: 1;
         background: rgba(255, 255, 255, 0.92);
         height: 100vh;
+        width: 100%;
         top: 0;
         left:0;
         right:0;
@@ -223,10 +234,12 @@ p{
 
 }
 
+
+
 @media #{$desktop} {
-  #home_header {
+  #home_header, #tours_header {
         background-image: url('../img/home/lake_large.png');
-        height: 950px;
+        height: 1100px;
   }
   .main_header {
     background-size: 100%;
@@ -318,7 +331,7 @@ p{
 
 // ****         FOOTER styling           ****//
 
-.footer{
+.footer {
   margin-top: 5%;
 }
 
@@ -458,11 +471,12 @@ p{
   }
 }
 
+
 @media #{$desktop}{
   #home_section_1 {
     // border: 2px solid orange;
     // position: absolute;
-    margin-top: -20%;
+    margin-top: -35%;
     #who_we_are_con {
       // border: 2px solid hotpink;
       display: block;
@@ -473,6 +487,11 @@ p{
         font-size: .875em;
       }
     }
+  }
+}
+@media #{$desktop_large} {
+  #home_section_1 {
+    margin-top: -30%;
   }
 }
 
@@ -503,7 +522,7 @@ p{
 
 //----ABOUT header --- //
 #about_header{
-    overflow: hidden;
+    // overflow: hidden;
   #about_book_button {
     background-color: $blue;
     color: $white;
@@ -896,6 +915,272 @@ overflow: hidden;
     }
   }
 }
+
+//--------------------  TOURS page --------------------------------//
+
+ //tours booking -----//
+#tours_booking {
+  #booking_container {
+    font-family: $body;
+    // color: $white;
+    padding: 0;
+    text-align: center;
+    #booking_container_1{
+      background-color: $red;
+      padding: 10px;
+      color: $white;
+      h3 {
+        font-family: $heading;
+        font-size: 1em;
+        padding:30px;
+      }
+      #booking_desc_1 {
+        text-align: justify;
+        font-size: .875em;
+      }
+      #telephone {
+        font-size: 1.8em;
+      }
+      img {
+        height: 60px;
+        padding-bottom: 20px;
+      }
+      #schedule {
+        font-size: 1.25em;
+      }
+    }
+    #booking_container_2 {
+      color: $blue;
+      text-align: justify;
+      font-size: .875em;
+      padding: 30px;
+  }
+  }
+}
+
+@media #{$desktop} {
+  #tours_booking {
+    margin-top: -35%;
+    #booking_container{
+
+    #booking_container_1 {
+      h3 {
+        font-size: 1.5em;
+      }
+      #schedule {
+        font-size: 1.5em;
+      }
+    }
+    #booking_container_2 {
+      background-color: $red;
+      padding-bottom:15%;
+      p {
+        color: $white;
+      }
+    }
+  }
+}
+#booking_image_con {
+  margin-top: -7%;
+  img {
+    width: 200%;
+  }
+}
+}
+
+@media #{$desktop_large} {
+  #tours_booking {
+    margin-top: -30%;
+  }
+}
+
+
+//tours details-------//
+#tours_details {
+#details_container {
+  background-color: $grey;
+  color: $blue;
+  font-size: 0.875em;
+  text-align: justify;
+  font-family: $body;
+  font-size: .875em;
+  padding-bottom:50px;
+  h3 {
+    font-family: $heading;
+    font-size: 1.2em;
+    text-align: center;
+    padding: 30px;
+    margin: 0;
+  }
+  img {
+    height: 50px;
+    margin: 20px;
+  }
+  .italics {
+    font-style: italic;
+  }
+}
+.wave_border {
+  margin-top: -6%;
+}
+}
+
+@media #{$desktop} {
+  #tours_details {
+    margin-top: 50px;
+    #details_image_con {
+      background-color: $blue;
+      padding-top: 75px;
+      padding-bottom: 75px;
+      img {
+        width: 200%;
+      }
+    }
+    #details_container {
+      padding-bottom: 150px;
+      h3 {
+        font-size: 2em;
+      }
+      img {
+        height: 80px;
+      }
+      p {
+        margin-top: 20px;
+      }
+    }
+  }
+}
+
+//tours arrival ----- //
+
+#tours_arrival {
+#arrival_container {
+  background-color: $grey;
+  color: $blue;
+  font-size: 0.875em;
+  text-align: justify;
+  font-family: $body;
+  font-size: .875em;
+  padding-bottom:20px;
+  padding-top: 30px;
+  margin-top: 40px;
+  h3 {
+    font-family: $heading;
+    font-size: 1.2em;
+    text-align: center;
+    padding: 25px;
+    margin: 0;
+  }
+}
+.wave_border {
+  margin-top: 20px;
+}
+}
+
+@media #{$desktop} {
+  #tours_arrival {
+    #arrival_container {
+      h3 {
+        padding-top: 75px;
+      }
+    }
+    .wave_border {
+      margin-top: 10px;
+    }
+  }
+}
+
+
+//tours dates ----- //
+
+#tours_dates {
+// border: 2px solid yellow;
+  #dates_title_container {
+    background-color: $blue;
+    // border: 2px solid red;
+
+    h3 {
+      font-family: $heading;
+      text-align: center;
+      font-size: 1em;
+      color: $white;
+      padding: 25px 0px 50px 0px;
+
+    }
+
+  }
+  #dates_container {
+    height: 300px;
+    background-color: #f0f0f0;
+    margin-top: -30px;
+    p{
+      font-family: $body;
+      font-size: .875em;
+      font-style: italic;
+      padding-top: 50px;
+    }
+  }
+}
+
+#tours_book_button {
+  background-color: $red;
+  font-family: $heading;
+  color: $white;
+  border: none;
+  padding: 10px 20px;
+  margin: 30px;
+}
+
+@media #{$tablet} {
+  #tours_dates {
+    margin-top: 30px;
+  }
+}
+
+@media #{$desktop} {
+  #tours_dates {
+    margin-top: 75px;
+    #dates_title_container {
+      h3{
+        padding: 50px 0px 100px 0px;
+        font-size: 2em;
+      }
+    }
+
+    #dates_container {
+      height: 500px;
+      margin-top: -75px;
+
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

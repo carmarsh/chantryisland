@@ -1,0 +1,1316 @@
+@font-face {
+  font-family: 'Adam CG Pro';
+  src: url("../fonts/adam/adam.cg_pro-webfont.woff2") format("woff2"), url("../fonts/adam/adam.cg_pro-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'Josefin Slab';
+  src: url("../fonts/josefinslab/josefinslab-regular-webfont.woff2") format("woff2"), url("../fonts/josefinslab/josefinslab-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'Josefin Slab Bold';
+  src: url("../fonts/josefinslab/josefinslab-bold-webfont.woff2") format("woff2"), url("../fonts/josefinslab/josefinslab-bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'Josefin Slab Italic';
+  src: url("../fonts/josefinslab/josefinslab-italic-webfont.woff2") format("woff2"), url("../fonts/josefinslab/josefinslab-italic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'Josefin Slab Semibold';
+  src: url("../fonts/josefinslab/josefinslab-semibold-webfont.woff2") format("woff2"), url("../fonts/josefinslab/josefinslab-semibold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+.nogutter {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important; }
+
+a:hover {
+  text-decoration: none;
+  color: #11132e; }
+
+button:focus, a:focus {
+  outline: none !important; }
+
+body {
+  overflow-x: hidden; }
+
+body.noscroll {
+  overflow-y: hidden; }
+
+a {
+  font-family: "Adam CG Pro";
+  color: #11132e; }
+
+.transparent {
+  opacity: 0.65; }
+
+.italic {
+  font-style: italic; }
+
+img {
+  width: 100%;
+  height: auto; }
+
+.big_box_shadow {
+  -webkit-box-shadow: 3px 3px 43px 7px rgba(0, 0, 0, 0.21);
+  -moz-box-shadow: 3px 3px 43px 7px rgba(0, 0, 0, 0.21);
+  box-shadow: 3px 3px 43px 7px rgba(0, 0, 0, 0.21); }
+
+@media (min-width: 576px) {
+  .icon_padding {
+    padding-left: 5px;
+    padding-right: 5px; } }
+.transparent:hover, .transparent:focus {
+  opacity: 1;
+  transition: opacity .5s ease-in;
+  -moz-transition: opacity .5s ease-in;
+  -webkit-transition: opacity .5s ease-in; }
+
+.text_link:hover {
+  opacity: .65;
+  transition: opacity .5s ease-in;
+  -moz-transition: opacity .5s ease-in;
+  -webkit-transition: opacity .5s ease-in; }
+
+.white_book_but {
+  border: none;
+  background-color: #FFFFFF;
+  font-family: "Josefin Slab";
+  font-weight: bold;
+  font-size: .875em;
+  color: #11132e;
+  padding: 12px 20px 10px 20px;
+  margin: 10px;
+  border: 2px solid #FFFFFF; }
+
+.white_book_but_spec {
+  border: none;
+  background-color: #FFFFFF;
+  font-family: "Josefin Slab";
+  font-weight: bold;
+  font-size: .875em;
+  color: #c72026;
+  padding: 12px 20px 10px 20px;
+  margin: 10px;
+  border: 2px solid #FFFFFF; }
+
+.red_book_but {
+  border: none;
+  background-color: #c72026;
+  font-family: "Josefin Slab";
+  font-weight: bold;
+  font-size: .875em;
+  color: #FFFFFF;
+  padding: 12px 20px 10px 20px;
+  margin: 10px;
+  border: 2px solid #c72026; }
+
+.blue_book_but {
+  border: none;
+  background-color: #11132e;
+  font-family: "Josefin Slab";
+  font-weight: bold;
+  font-size: .875em;
+  color: #FFFFFF;
+  padding: 12px 20px 10px 20px;
+  margin: 10px;
+  border: 2px solid #11132e; }
+
+.box_heading {
+  font-family: "Adam CG Pro";
+  font-size: 1em;
+  text-align: center;
+  margin-bottom: 20px; }
+
+.box_heading_spec {
+  font-family: "Adam CG Pro";
+  font-size: .875em;
+  text-align: center;
+  margin-bottom: 20px; }
+
+.box_para {
+  font-family: "Josefin Slab";
+  text-align: justify;
+  text-indent: 20px;
+  font-size: 1em; }
+
+.box_para_ni {
+  font-family: "Josefin Slab";
+  text-align: justify;
+  font-size: 1em; }
+
+.box_spec1 {
+  font-family: "Josefin Slab";
+  text-align: center;
+  font-size: 1.75em; }
+
+.box_spec2 {
+  font-family: "Josefin Slab";
+  text-align: center;
+  font-size: 1.5em;
+  padding-top: 20px; }
+
+.box_spec3 {
+  font-family: "Josefin Slab";
+  text-align: center;
+  font-size: 1.25em; }
+
+.box_spec4 {
+  font-family: "Josefin Slab";
+  text-align: center;
+  font-size: 1em; }
+
+.box_spec5 {
+  font-family: "Josefin Slab Bold";
+  text-align: center;
+  font-size: 1.25em;
+  margin-bottom: 5px; }
+
+.red_box {
+  background-color: #c72026;
+  color: #FFFFFF;
+  padding: 25px 40px 25px 40px; }
+
+.white_box {
+  background-color: #FFFFFF;
+  color: #11132e;
+  padding: 25px 40px 25px 40px; }
+
+.grey_box {
+  background-color: #d2d5d3;
+  color: #11132e;
+  padding: 25px 40px 25px 40px; }
+
+.blue_box {
+  background-color: #11132e;
+  color: #FFFFFF;
+  padding: 25px 40px 25px 40px; }
+
+.mtop_box {
+  margin-top: 30px; }
+
+.mbot_box {
+  margin-bottom: 30px; }
+
+.spec_box1 {
+  padding-top: 60px; }
+
+.box_icon {
+  margin-bottom: 15px; }
+
+.wave_bottom {
+  margin-top: -45px; }
+
+.wave_top {
+  margin-bottom: -50px;
+  position: absolute;
+  z-index: 1; }
+
+.red_abs_logo {
+  height: 100px;
+  position: absolute;
+  z-index: 5;
+  margin-top: -55px; }
+
+@media (min-width: 768px) {
+  .white_book_but:hover {
+    cursor: pointer;
+    color: #FFFFFF;
+    background-color: rgba(255, 255, 255, 0);
+    transition: all .3s ease-in;
+    -moz-transition: all .3s ease-in;
+    -webkit-transition: all .3s ease-in; }
+
+  .white_book_but_spec:hover {
+    cursor: pointer;
+    color: #FFFFFF;
+    background-color: rgba(255, 255, 255, 0);
+    transition: all .3s ease-in;
+    -moz-transition: all .3s ease-in;
+    -webkit-transition: all .3s ease-in; }
+
+  .red_book_but:hover {
+    cursor: pointer;
+    color: #c72026;
+    background-color: rgba(255, 255, 255, 0);
+    transition: all .3s ease-in;
+    -moz-transition: all .3s ease-in;
+    -webkit-transition: all .3s ease-in; }
+
+  .blue_book_but:hover {
+    cursor: pointer;
+    color: #11132e;
+    background-color: rgba(255, 255, 255, 0);
+    transition: all .3s ease-in;
+    -moz-transition: all .3s ease-in;
+    -webkit-transition: all .3s ease-in; }
+
+  .box_heading {
+    font-family: "Adam CG Pro";
+    font-size: 1.5em;
+    font-weight: bolder;
+    text-align: center;
+    margin-bottom: 20px; }
+
+  .box_heading_spec {
+    font-family: "Adam CG Pro";
+    font-size: 1.25em;
+    text-align: center;
+    margin-bottom: 20px; }
+
+  .box_para {
+    font-family: "Josefin Slab";
+    text-align: justify;
+    text-indent: 20px;
+    font-size: 1.2em; }
+
+  .box_para_ni {
+    font-family: "Josefin Slab";
+    text-align: justify;
+    font-size: 1.2em; }
+
+  .box_spec1 {
+    font-family: "Josefin Slab";
+    text-align: center;
+    font-size: 1.7em; }
+
+  .box_spec2 {
+    font-family: "Josefin Slab";
+    text-align: center;
+    font-size: 1.7em;
+    padding-top: 20px; }
+
+  .box_spec3 {
+    font-family: "Josefin Slab";
+    text-align: center;
+    font-size: 1.2em; }
+
+  .box_spec4 {
+    font-family: "Josefin Slab";
+    text-align: center;
+    font-size: 1.45em; }
+
+  .box_spec5 {
+    font-family: "Josefin Slab Bold";
+    text-align: center;
+    font-size: 1.7em;
+    margin-bottom: 5px; }
+
+  .red_box {
+    background-color: #c72026;
+    color: #FFFFFF;
+    padding: 40px 100px 40px 100px; }
+
+  .white_box {
+    background-color: #FFFFFF;
+    color: #11132e;
+    padding: 40px 100px 40px 100px; }
+
+  .grey_box {
+    background-color: #d2d5d3;
+    color: #11132e;
+    padding: 40px 100px 40px 100px; }
+
+  .blue_box {
+    background-color: #11132e;
+    color: #FFFFFF;
+    padding: 40px 100px 40px 100px; }
+
+  .spec_box1 {
+    padding-top: 100px; }
+
+  .spec_box1_lg {
+    padding-top: 100px; }
+
+  .red_abs_logo {
+    height: 150px;
+    position: absolute;
+    z-index: 5;
+    margin-top: -70px; } }
+#home_header, #tours_header {
+  background-image: url("../img/home/water.jpg");
+  background-size: cover; }
+
+#home_title_box {
+  margin: 20px;
+  border: 1px solid #FFFFFF;
+  padding: 10px;
+  text-align: center; }
+  #home_title_box h2 {
+    font-family: "Josefin Slab";
+    line-height: 30px;
+    margin: 0;
+    color: #FFFFFF;
+    font-size: 1em; }
+    #home_title_box h2 .home_title {
+      font-family: "Adam CG Pro";
+      font-size: 1.3em; }
+
+.main_header {
+  padding-bottom: 10px; }
+  .main_header .top_con {
+    padding-top: 20px;
+    margin-bottom: 10px; }
+  .main_header .main_nav_con {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1; }
+    .main_header .main_nav_con .main_nav {
+      background: none;
+      padding: 0px; }
+      .main_header .main_nav_con .main_nav button {
+        border: none;
+        right: 10px;
+        height: 60px;
+        width: 65px;
+        z-index: 10; }
+        .main_header .main_nav_con .main_nav button span, .main_header .main_nav_con .main_nav button span:before, .main_header .main_nav_con .main_nav button span:after {
+          cursor: pointer;
+          border-radius: 10px;
+          height: 5px;
+          width: 35px;
+          background: #11132e;
+          position: absolute;
+          display: block;
+          content: '';
+          transition: all 500ms ease-in-out; }
+        .main_header .main_nav_con .main_nav button span:before {
+          top: -9px; }
+        .main_header .main_nav_con .main_nav button span::after {
+          bottom: -9px; }
+      .main_header .main_nav_con .main_nav button.active span {
+        background-color: transparent; }
+      .main_header .main_nav_con .main_nav button.active span:before, .main_header .main_nav_con .main_nav button.active span:after {
+        top: 0; }
+      .main_header .main_nav_con .main_nav button.active span:before {
+        transform: rotate(45deg);
+        -moz-transform: rotate(45deg); }
+      .main_header .main_nav_con .main_nav button.active span:after {
+        transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg); }
+      .main_header .main_nav_con .main_nav .nav_content {
+        height: 100vh;
+        background: rgba(255, 255, 255, 0.92);
+        padding-top: 50px; }
+        .main_header .main_nav_con .main_nav .nav_content ul li {
+          text-align: center; }
+          .main_header .main_nav_con .main_nav .nav_content ul li a {
+            font-size: 1.5em;
+            color: #11132e; }
+
+@media (min-width: 768px) {
+  #home_header, #tours_header {
+    background-image: url("../img/home/water.png"); } }
+@media (min-width: 992px) {
+  #home_header, #tours_header {
+    padding-bottom: 200px;
+    background-repeat: no-repeat;
+    background-position: left bottom; }
+
+  #home_title_box {
+    padding: 20px; }
+    #home_title_box h2 {
+      font-size: 1.25em;
+      line-height: 35px; }
+
+  .main_header .top_con .home_button_con, .main_header .top_con #home_home_button_con {
+    text-align: center;
+    position: relative; }
+    .main_header .top_con .home_button_con a, .main_header .top_con #home_home_button_con a {
+      font-size: .875em; }
+  .main_header .top_con #home_home_button_con:before {
+    border-bottom: 2px solid #11132e;
+    content: "";
+    width: 12%;
+    left: 44%;
+    bottom: 0;
+    top: 25px;
+    position: absolute;
+    height: 1px; }
+  .main_header .top_con .home_button_con:before {
+    border-bottom: 2px solid #11132e;
+    content: "";
+    width: 12%;
+    left: 44%;
+    bottom: 0;
+    top: 25px;
+    position: absolute;
+    height: 1px;
+    opacity: 0; }
+  .main_header .top_con .home_button_con:hover {
+    opacity: .65;
+    transition: opacity .5s ease-in;
+    -moz-transition: opacity .5s ease-in;
+    -webkit-transition: opacity .5s ease-in; }
+  .main_header .top_con .home_button_con:hover:before {
+    opacity: .65;
+    transition: opacity .5s ease-in;
+    -moz-transition: opacity .5s ease-in;
+    -webkit-transition: opacity .5s ease-in; }
+  .main_header .top_con .icon_con ul {
+    margin-bottom: 0;
+    padding: 0;
+    text-align: center; }
+    .main_header .top_con .icon_con ul li {
+      display: inline; }
+      .main_header .top_con .icon_con ul li a img {
+        width: 30px;
+        padding-right: 5px;
+        padding-left: 5px; }
+  .main_header .main_nav_con {
+    position: static;
+    margin-top: 20px; }
+    .main_header .main_nav_con .main_nav .nav_content {
+      height: auto;
+      background: none;
+      padding: 0;
+      text-align: center; }
+      .main_header .main_nav_con .main_nav .nav_content ul {
+        margin: 0 auto; }
+        .main_header .main_nav_con .main_nav .nav_content ul li p {
+          color: #11132e;
+          font-size: 1em;
+          padding-top: 4px; }
+        .main_header .main_nav_con .main_nav .nav_content ul li a {
+          font-size: .875em; }
+        .main_header .main_nav_con .main_nav .nav_content ul li:hover {
+          opacity: .65;
+          transition: opacity .5s ease-in;
+          -moz-transition: opacity .5s ease-in;
+          -webkit-transition: opacity .5s ease-in; } }
+.main_footer {
+  background-color: #11132e; }
+  .main_footer .icon_con {
+    text-align: center; }
+    .main_footer .icon_con ul {
+      padding: 15px;
+      margin: 0; }
+      .main_footer .icon_con ul li {
+        display: inline; }
+        .main_footer .icon_con ul li img {
+          height: 45px;
+          width: auto;
+          padding: 10px; }
+
+@media (min-width: 992px) {
+  .main_footer {
+    margin-top: 50px;
+    padding: 40px 20px; }
+    .main_footer .nav_con ul {
+      padding: 0;
+      margin: 0;
+      text-align: center; }
+      .main_footer .nav_con ul li {
+        display: inline-block;
+        color: #FFFFFF; }
+        .main_footer .nav_con ul li p {
+          margin: 0; }
+        .main_footer .nav_con ul li a {
+          color: #FFFFFF;
+          font-size: .7em;
+          padding: 3px; }
+    .main_footer .icon_con ul li img {
+      height: 30px;
+      padding: 5px; }
+    .main_footer .login_button {
+      text-align: center;
+      opacity: .65; }
+      .main_footer .login_button a {
+        color: #11132e;
+        padding: 10px 7px;
+        background-color: #FFFFFF;
+        font-size: .875em;
+        border: 2px solid #FFFFFF; }
+    .main_footer .login_button a:hover {
+      background-color: #11132e;
+      color: #FFFFFF;
+      transition: all .3s ease-in;
+      -moz-transition: all .3s ease-in;
+      -webkit-transition: all .3s ease-in; } }
+#home_section_1 img {
+  margin-bottom: 20px; }
+
+@media (min-width: 768px) {
+  #home_video_section {
+    text-align: center; } }
+@media (min-width: 992px) {
+  #home_section_1 {
+    margin-top: -180px; }
+    #home_section_1 img {
+      margin-bottom: 0px;
+      margin-top: 50px;
+      max-height: 70px; }
+    #home_section_1 .red_box {
+      padding-bottom: 100px; }
+
+  #home_video_section {
+    margin-top: -70px; } }
+#tours_section_1 .text_link {
+  color: #FFFFFF; }
+
+#tours_dates_sched_section {
+  margin-top: -20px;
+  margin-bottom: 40px; }
+  #tours_dates_sched_section #dates_button_con {
+    margin-bottom: 40px; }
+    #tours_dates_sched_section #dates_button_con .blue_book_but {
+      display: block;
+      width: 100%;
+      margin: 0;
+      margin-bottom: 5px; }
+  #tours_dates_sched_section .table_month {
+    display: none;
+    font-family: "Adam CG Pro";
+    color: #11132e;
+    font-size: .875em; }
+    #tours_dates_sched_section .table_month table {
+      width: 100%; }
+      #tours_dates_sched_section .table_month table tr {
+        border-bottom: 1px solid #11132e; }
+      #tours_dates_sched_section .table_month table tr:last-child {
+        border: none; }
+      #tours_dates_sched_section .table_month table tr.august {
+        border-bottom: 1px solid #11132e; }
+      #tours_dates_sched_section .table_month table td.time {
+        float: right;
+        text-align: right; }
+
+.active_month {
+  background-color: #FFFFFF;
+  color: #11132e; }
+
+#tours_footer, #about_footer, #comm_footer, #gallery_footer {
+  margin-top: 30px; }
+
+@media (min-width: 768px) {
+  #tours_dates_sched_section #dates_button_con .blue_book_but {
+    display: inline;
+    width: 120px;
+    margin: 10px; } }
+@media (min-width: 992px) {
+  #tours_section_1 {
+    margin-top: -180px; }
+    #tours_section_1 .red_box {
+      padding-bottom: 100px; }
+
+  #tours_image1_section {
+    margin-top: -70px; }
+
+  #tours_image2_section {
+    margin-top: 50px; }
+    #tours_image2_section img {
+      margin: 25px 100px; }
+
+  #tours_dates_heading_section {
+    margin-top: 50px; } }
+#about_boat {
+  position: absolute;
+  width: 75px;
+  right: 30px;
+  top: -20px; }
+
+#about_birds {
+  position: absolute;
+  width: 120px;
+  right: 0;
+  bottom: -10px;
+  padding-right: 50px; }
+
+#about_section_1 .blue_box {
+  padding-bottom: 40px; }
+
+#about_image2_section {
+  margin-top: -110px;
+  z-index: 1; }
+
+#about_section_2_box {
+  padding-top: 85px;
+  margin-top: -50px;
+  z-index: -1; }
+
+#about_section_4 .grey_box {
+  padding-bottom: 50px; }
+#about_section_4 .lhouse_caption {
+  border: 2px solid #11132e;
+  position: absolute;
+  z-index: 100;
+  margin-top: 25px;
+  padding: 2px 10px;
+  font-family: "Adam CG Pro"; }
+#about_section_4 .lhouse_caption:hover {
+  cursor: pointer; }
+#about_section_4 .lhouse_con img {
+  width: 90%;
+  margin-left: 5%; }
+#about_section_4 .lhouse_overlay {
+  display: none; }
+#about_section_4 .lhouse_info {
+  font-size: 1em;
+  font-family: "Josefin Slab";
+  opacity: 0;
+  margin-top: 100px;
+  color: #FFFFFF;
+  padding: 20px; }
+#about_section_4 .lhouse_info_a {
+  font-size: .85em; }
+
+#mobile_lhouse_info_con {
+  height: 0px;
+  background-color: #11132e;
+  overflow: scroll; }
+  #mobile_lhouse_info_con #close_but {
+    opacity: 0;
+    display: none;
+    float: right;
+    margin-top: 50px; }
+  #mobile_lhouse_info_con #before_info {
+    display: none;
+    opacity: 0;
+    font-size: 1em;
+    font-family: "Josefin Slab";
+    opacity: 0;
+    margin-top: 10px;
+    color: #FFFFFF;
+    padding: 20px;
+    text-indent: 30px; }
+  #mobile_lhouse_info_con #after_info {
+    opacity: 0;
+    display: none;
+    font-size: 1em;
+    font-family: "Josefin Slab";
+    opacity: 0;
+    margin-top: 10px;
+    color: #FFFFFF;
+    padding: 20px;
+    text-indent: 30px; }
+
+.clickedinfo {
+  background-color: #11132e;
+  color: #FFFFFF; }
+
+@media (min-width: 768px) {
+  #about_boat {
+    width: 125px;
+    top: -40px;
+    right: 50px; }
+
+  #about_section_1 .blue_box {
+    padding-bottom: 60px; }
+
+  #about_image2_section {
+    margin-top: -135px; } }
+@media (min-width: 992px) {
+  #about_waves {
+    position: absolute;
+    left: -15%;
+    width: 55%; }
+
+  #about_birds {
+    width: 150px;
+    padding-right: 0;
+    right: -50px;
+    bottom: 75px; }
+
+  #about_birds2 {
+    position: absolute;
+    width: 100px;
+    left: 0;
+    bottom: -175px; }
+
+  #about_para1 {
+    margin-top: 20%; }
+
+  #about_section_1 .blue_box {
+    padding-bottom: 100px;
+    margin-bottom: 150px; }
+
+  #about_image2_section {
+    margin-top: -300px; }
+
+  #about_section_2_box {
+    padding-top: 40px;
+    margin-top: 75px; }
+
+  #about_section_2 {
+    margin-bottom: 50px; }
+
+  #about_section_3_box {
+    padding-bottom: 100px; }
+
+  #about_bird_image1_section {
+    margin-top: -100px;
+    margin-bottom: 20px; }
+
+  #about_section_4 .red_box {
+    z-index: 105; }
+  #about_section_4 .grey_box {
+    padding-top: 200px;
+    margin-top: -150px; }
+  #about_section_4 .lhouse_con {
+    position: relative; }
+    #about_section_4 .lhouse_con img {
+      width: 90%;
+      margin-left: 5%; }
+  #about_section_4 .lhouse_overlay {
+    position: absolute;
+    height: 100%;
+    width: 90%;
+    margin-left: 5%;
+    background: rgba(17, 19, 46, 0.65);
+    display: block;
+    top: 0;
+    left: 0;
+    opacity: 0; }
+  #about_section_4 .lhouse_caption:hover {
+    background-color: #11132e;
+    color: #FFFFFF;
+    transition: all .3s ease-in;
+    -moz-transition: all .3s ease-in;
+    -webkit-transition: all .3s ease-in; } }
+.galImage_thumb_con {
+  text-align: center; }
+  .galImage_thumb_con .galImage_thumb {
+    height: 100px;
+    width: auto;
+    margin-bottom: 20px; }
+
+#expanded_gallery_con {
+  position: fixed;
+  display: none;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 20;
+  background: rgba(0, 0, 0, 0.45); }
+  #expanded_gallery_con #expanded_gallery {
+    background-color: #c72026;
+    position: absolute;
+    height: 65%;
+    margin-top: 150px; }
+    #expanded_gallery_con #expanded_gallery #close_button_con {
+      position: relative;
+      height: 10%; }
+      #expanded_gallery_con #expanded_gallery #close_button_con button {
+        float: right;
+        background: none;
+        border: none;
+        color: #FFFFFF;
+        font-family: "Adam CG Pro";
+        font-size: 1.5em; }
+    #expanded_gallery_con #expanded_gallery #galImage_con {
+      position: relative;
+      height: 65%; }
+      #expanded_gallery_con #expanded_gallery #galImage_con .galImage_large {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        height: 90%;
+        margin-top: 3%;
+        width: auto; }
+    #expanded_gallery_con #expanded_gallery #galImage_desc_con {
+      position: relative;
+      height: 15%;
+      color: #FFFFFF;
+      padding-top: 20px; }
+    #expanded_gallery_con #expanded_gallery #galImage_control_con {
+      height: 10%;
+      position: relative;
+      padding-left: 50px;
+      padding-right: 50px; }
+      #expanded_gallery_con #expanded_gallery #galImage_control_con button {
+        background: none;
+        border: none;
+        color: #FFFFFF;
+        font-size: 2em; }
+      #expanded_gallery_con #expanded_gallery #galImage_control_con #next_button {
+        float: right; }
+
+@media (min-width: 576px) {
+  .galImage_thumb_con .galImage_thumb {
+    height: 150px; } }
+@media (min-width: 768px) {
+  .galImage_thumb_con .galImage_thumb {
+    height: 175px; } }
+@media (min-width: 992px) {
+  .galImage_thumb_con .galImage_thumb {
+    height: 200px; }
+  .galImage_thumb_con .galImage_overlay {
+    position: absolute;
+    z-index: 10;
+    height: 200px;
+    width: 90%;
+    left: 5%;
+    right: 0;
+    top: 0;
+    background: rgba(17, 19, 46, 0.5); }
+  .galImage_thumb_con .galImage_overlay:hover {
+    background: rgba(17, 19, 46, 0);
+    transition: all .3s ease-in;
+    -moz-transition: all .3s ease-in;
+    -webkit-transition: all .3s ease-in; }
+
+  #expanded_gallery_con #expanded_gallery {
+    height: 75%; } }
+#comm_section_1 #vol_con #vol_1_con p, #comm_section_1 #vol_con #vol_2_con p {
+  margin-bottom: 0; }
+#comm_section_1 #vol_con #vol_2_con {
+  margin-bottom: 30px; }
+
+#partners_logo_con {
+  margin-top: -50px;
+  padding-bottom: 50px; }
+
+.partner_logo {
+  background-color: #FFFFFF;
+  margin-bottom: 20px;
+  height: 150px;
+  width: 150px;
+  padding: 20px; }
+  .partner_logo img {
+    max-width: 150px;
+    margin: 0 auto; }
+
+@media (min-width: 576px) {
+  .partner_logo {
+    width: 200px;
+    height: 200px; }
+    .partner_logo img {
+      max-width: 200px; } }
+@media (min-width: 768px) {
+  #partners_logo_con {
+    margin-top: -70px; } }
+@media (min-width: 992px) {
+  #comm_section_1 #comm_ribbon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 50px;
+    width: 125px; }
+  #comm_section_1 #vol_heading {
+    margin-top: 40px; }
+  #comm_section_1 #vol_para1 {
+    margin-top: 50px; }
+
+  .partner_logo {
+    margin-right: 3px;
+    margin-left: 3px;
+    margin-bottom: 40px; } }
+#events_carousel_con {
+  margin-top: 30px; }
+
+#control_con {
+  margin-top: 30px; }
+
+.carousel-item {
+  padding-bottom: 70px; }
+
+.carousel-caption {
+  height: 70px;
+  bottom: 10px;
+  font-family: "Josefin Slab";
+  color: #11132e; }
+  .carousel-caption h3 {
+    font-size: 1em; }
+
+.caption {
+  display: block !important; }
+
+.carousel-indicators {
+  position: static;
+  display: inline-flex;
+  width: 40%;
+  margin-left: 15%;
+  padding-left: 10%;
+  bottom: 0; }
+
+.carousel-indicators li {
+  list-style: decimal;
+  text-indent: 0;
+  height: 0px;
+  font-family: "Josefin Slab";
+  font-size: 1em;
+  margin: 0;
+  width: 0px; }
+
+.carousel-indicators .active {
+  font-weight: bolder;
+  font-size: 1.1em; }
+
+.carousel-control-prev, .carousel-control-next {
+  align-items: flex-end;
+  margin-bottom: 20px;
+  position: static;
+  display: inline-flex;
+  opacity: 1; }
+
+.carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='11132e' viewBox='0 0 8 8'%3E%3Cpath d='M4 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+  height: 15px; }
+
+.carousel-control-next-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='11132e' viewBox='0 0 8 8'%3E%3Cpath d='M1.5 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+  height: 15px; }
+
+.carousel-control-prev {
+  float: left;
+  width: 15%;
+  margin-top: 10px; }
+
+.carousel-control-next {
+  float: right;
+  margin-top: 10px;
+  width: 15%; }
+
+#donate_section_1 .blue_box {
+  padding-bottom: 40px; }
+#donate_section_1 .white_box {
+  margin-top: -60px;
+  margin-bottom: 30px; }
+
+#donate_section_2 #lighthouse_icon_con {
+  text-align: center;
+  margin-bottom: 30px; }
+#donate_section_2 #lighthouse_icon {
+  max-width: 200px;
+  margin: 0 auto; }
+#donate_section_2 #circle_con {
+  position: absolute;
+  bottom: 20px; }
+  #donate_section_2 #circle_con .d_circle {
+    background: #11132e;
+    border: 5px solid #11132e;
+    text-align: center;
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    margin: 0 auto;
+    margin-bottom: 5px; }
+    #donate_section_2 #circle_con .d_circle p {
+      margin-top: 2px;
+      font-family: "Adam CG Pro";
+      color: #c72026; }
+  #donate_section_2 #circle_con .active_circ {
+    background: none;
+    cursor: pointer;
+    transition: all .3s ease-in;
+    -moz-transition: all .3s ease-in;
+    -webkit-transition: all .3s ease-in; }
+    #donate_section_2 #circle_con .active_circ p {
+      color: #11132e; }
+
+#contact_section_1 .grey_box {
+  padding-bottom: 100px; }
+
+#directions_box {
+  margin-top: -110px; }
+  #directions_box .google_link a {
+    color: #FFFFFF;
+    font-family: "Josefin Slab";
+    border: 1px solid #FFFFFF;
+    padding: 10px; }
+
+#contact_map_section {
+  margin-top: -235px;
+  margin-bottom: 50px; }
+  #contact_map_section .map-wrapper {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    height: 350px;
+    float: left;
+    z-index: 20; }
+  #contact_map_section .directions-wrapper {
+    width: 50%;
+    float: right;
+    height: 350px;
+    border: 2px solid black;
+    overflow: scroll; }
+  #contact_map_section button {
+    cursor: pointer;
+    margin-left: 12px; }
+  #contact_map_section .preload-wrapper {
+    width: 95%;
+    height: 348px;
+    margin-top: 10px;
+    position: absolute;
+    background-color: #c72026;
+    z-index: 50;
+    left: 0;
+    right: 0;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1em;
+    color: #FFFFFF;
+    font-family: "Adam CG Pro";
+    pointer-events: none;
+    transition: opacity 0.7s ease; }
+  #contact_map_section .preload-wrapper i {
+    margin: 100px 0 20px;
+    font-size: 2.2em; }
+  #contact_map_section .preload-wrapper span {
+    display: block; }
+  #contact_map_section .hide-preloader {
+    opacity: 0; }
+
+#contact_form label {
+  display: block;
+  font-family: "Josefin Slab";
+  font-size: 1.25em;
+  color: #FFFFFF;
+  margin-bottom: 0;
+  padding-left: 5px; }
+#contact_form input, #contact_form textarea {
+  width: 100%;
+  background-color: transparent;
+  border: 2px solid #FFFFFF;
+  outline: none;
+  padding: 7px;
+  margin-bottom: 15px; }
+#contact_form input[type="text"], #contact_form textarea[type="text"], #contact_form input[type="email"] {
+  font-family: "Josefin Slab";
+  color: #FFFFFF; }
+#contact_form #contact_send_message_button {
+  background-color: #11132e;
+  border: 2px solid #11132e;
+  color: #FFFFFF;
+  font-family: "Josefin Slab Bold";
+  margin-bottom: 40px; }
+#contact_form #contact_send_message_button:hover {
+  cursor: pointer;
+  color: #11132e;
+  background-color: rgba(255, 255, 255, 0);
+  transition: all .3s ease-in;
+  -moz-transition: all .3s ease-in;
+  -webkit-transition: all .3s ease-in; }
+
+@media (min-width: 992px) {
+  #contact_section_1 #location_icon {
+    margin-top: 135px;
+    padding: 15px; }
+  #contact_section_1 #path_icon {
+    position: absolute;
+    z-index: 1;
+    width: 125% !important;
+    max-width: none;
+    height: auto !important;
+    left: -10%;
+    margin-top: 25px; }
+  #contact_section_1 .grey_box {
+    padding-bottom: 450px; }
+
+  #directions_box {
+    margin-top: -450px;
+    position: absolute; }
+    #directions_box .blue_box {
+      padding-bottom: 150px; } }
+.admin_login_con {
+  height: 0px;
+  display: none;
+  overflow: hidden;
+  background-color: #c72026;
+  width: 100%;
+  text-align: center; }
+  .admin_login_con .login_con_inner {
+    height: 100%; }
+    .admin_login_con .login_con_inner form label {
+      font-family: "Adam CG Pro";
+      color: #FFFFFF; }
+    .admin_login_con .login_con_inner form input {
+      border: none;
+      border: 2px solid #FFFFFF;
+      background: none;
+      padding: 10px;
+      margin-bottom: 15px; }
+    .admin_login_con .login_con_inner form input[type=text], .admin_login_con .login_con_inner form input[type=password] {
+      margin-right: 20px;
+      font-family: "Josefin Slab"; }
+    .admin_login_con .login_con_inner form input[type=submit] {
+      background-color: #FFFFFF;
+      color: #c72026;
+      font-family: "Adam CG Pro"; }
+  .admin_login_con .login_close {
+    border: none;
+    font-family: "Adam CG Pro";
+    font-size: 2em;
+    background: none;
+    color: #FFFFFF;
+    position: absolute;
+    right: 20px;
+    margin-top: 10px; }
+
+.cms_header {
+  margin-bottom: 20px; }
+
+.page_edits_title_con {
+  background-color: #11132e;
+  padding: 10px;
+  width: 100%;
+  margin-top: 20px;
+  border-bottom: 2px solid #FFFFFF; }
+  .page_edits_title_con .page_title {
+    display: inline;
+    color: #FFFFFF;
+    font-family: "Adam CG Pro"; }
+  .page_edits_title_con .page_button_con {
+    float: right;
+    display: inline; }
+    .page_edits_title_con .page_button_con i {
+      color: #FFFFFF; }
+    .page_edits_title_con .page_button_con button {
+      border: none;
+      background: none; }
+    .page_edits_title_con .page_button_con .less_button {
+      display: none; }
+
+.page_edits_con {
+  display: none;
+  background-color: #FFFFFF;
+  margin-bottom: 20px;
+  border: 5px solid #11132e; }
+
+.form_specp {
+  color: #c72026; }
+
+.form1, .form_delete_area {
+  text-align: center;
+  display: block;
+  margin-bottom: 30px;
+  font-family: "Adam CG Pro";
+  color: #11132e; }
+  .form1 .form_heading1, .form_delete_area .form_heading1 {
+    font-family: "Adam CG Pro";
+    margin: 10px;
+    color: #FFFFFF;
+    font-size: 1em;
+    padding: 10px;
+    font-size: 1.25em;
+    background-color: #c72026;
+    width: 100%; }
+  .form1 label, .form_delete_area label {
+    display: block;
+    font-family: "Adam CG Pro";
+    color: #c72026;
+    text-align: center;
+    font-size: 1.25em;
+    margin: 10px; }
+  .form1 textarea, .form_delete_area textarea {
+    display: block;
+    font-family: "Josefin Slab Bold";
+    border: none;
+    border: 2px solid #c72026;
+    color: #11132e;
+    width: 80%;
+    margin: 0 auto; }
+  .form1 input[type="submit"], .form_delete_area input[type="submit"] {
+    background-color: #c72026;
+    border: none;
+    padding: 10px;
+    margin: 10px;
+    font-family: "Adam CG Pro";
+    color: #FFFFFF; }
+  .form1 input[type="file"], .form_delete_area input[type="file"] {
+    font-family: "Adam CG Pro";
+    border: 1px dashed #c72026;
+    padding: 5px;
+    display: block;
+    margin: 0 auto; }
+  .form1 input[type="file"]::-webkit-file-upload-button, .form_delete_area input[type="file"]::-webkit-file-upload-button {
+    font-family: "Adam CG Pro";
+    background: #FFFFFF;
+    color: #c72026;
+    border: 2px solid #c72026; }
+  .form1 p, .form_delete_area p {
+    font-family: "Josefin Slab";
+    font-size: 1.25em;
+    color: #c72026; }
+  .form1 .form_heading3, .form_delete_area .form_heading3 {
+    font-family: "Josefin Slab";
+    font-size: 1.25em;
+    color: #c72026; }
+  .form1 img, .form_delete_area img {
+    width: 200px;
+    margin-bottom: 20px; }
+
+.form2 {
+  text-align: center;
+  display: block;
+  margin-bottom: 30px; }
+  .form2 .form_heading1 {
+    font-family: "Adam CG Pro";
+    margin: 10px;
+    color: #11132e;
+    font-size: 1em;
+    padding: 10px;
+    font-size: 1.25em;
+    background-color: #d2d5d3; }
+  .form2 img {
+    width: 200px;
+    margin-bottom: 20px; }
+  .form2 label {
+    display: block;
+    font-family: "Adam CG Pro";
+    color: #11132e;
+    text-align: center;
+    font-size: 1.25em;
+    margin: 10px; }
+  .form2 textarea {
+    display: block;
+    font-family: "Josefin Slab Bold";
+    border: none;
+    border: 3px solid #c72026;
+    color: #11132e;
+    width: 80%;
+    margin: 0 auto; }
+  .form2 input[type="submit"] {
+    background-color: #11132e;
+    border: none;
+    padding: 10px;
+    margin: 10px;
+    font-family: "Adam CG Pro";
+    color: #FFFFFF; }
+  .form2 input[type="file"] {
+    font-family: "Adam CG Pro";
+    border: 1px dashed #11132e;
+    padding: 5px;
+    display: block;
+    margin: 0 auto; }
+  .form2 input[type="file"]::-webkit-file-upload-button {
+    font-family: "Adam CG Pro";
+    background: #FFFFFF;
+    color: #11132e;
+    border: 2px solid #11132e; }
+  .form2 input[type="text"] {
+    font-family: "Josefin Slab";
+    color: #11132e; }
+  .form2 p {
+    font-family: "Josefin Slab";
+    font-size: 1.25em;
+    color: #11132e; }
+
+#user_man_title {
+  margin-top: 50px; }
+
+#cms_footer {
+  background-color: #d2d5d3 !important;
+  margin-top: 40px; }
+  #cms_footer .blue_book_but {
+    margin: 40px; }
+
+.img_maxw {
+  max-width: 100% !important;
+  width: auto !important;
+  height: auto !important; }
+
+/*# sourceMappingURL=chanty.css.map */
